@@ -1,0 +1,30 @@
+import React from 'react'
+import { NextPageWithLayout } from '@/interfaces/layout'
+import { MainLayout } from '@/components/layout'
+import {
+  HomeFeature,
+  HomeHero,
+  HomeBuiltOn,
+  HomeTestimonial,
+  HomeOurMentors,
+  HomeNewsLetter,
+  HomePlayground,
+} from '@/components/home'
+
+const Home: NextPageWithLayout = () => {
+  return (
+    <>
+      <HomeHero />
+      <HomeBuiltOn />
+      <HomeFeature />
+      <HomeTestimonial />
+      <HomePlayground />
+      <HomeOurMentors />
+      <HomeNewsLetter />
+    </>
+  )
+}
+
+Home.getLayout = (page) => <MainLayout>{page}</MainLayout>
+
+export default Home
