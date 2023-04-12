@@ -8,8 +8,8 @@ import useMediaQuery from '@mui/material/useMediaQuery'
 import { useTheme, styled } from '@mui/material/styles'
 import IconArrowBack from '@mui/icons-material/ArrowBack'
 import IconArrowForward from '@mui/icons-material/ArrowForward'
-import { MentorCardItem } from '@/components/client'
-import { data } from './mentors.data'
+import { ClientCardItem } from '@/components/client'
+import { data } from './clients.data'
 
 interface SliderArrowArrow {
   onClick?: () => void
@@ -57,7 +57,7 @@ const StyledDots = styled('ul')(({ theme }) => ({
   },
 }))
 
-const HomeOurMentors: FC = () => {
+const HomeClients: FC = () => {
   const { breakpoints } = useTheme()
   const matchMobileView = useMediaQuery(breakpoints.down('md'))
 
@@ -97,7 +97,7 @@ const HomeOurMentors: FC = () => {
 
         <Slider {...sliderConfig}>
           {data.map((item) => (
-            <MentorCardItem key={String(item.id)} item={item} />
+            <ClientCardItem key={String(item.id)} item={item} />
           ))}
         </Slider>
       </Container>
@@ -105,4 +105,4 @@ const HomeOurMentors: FC = () => {
   )
 }
 
-export default HomeOurMentors
+export default HomeClients

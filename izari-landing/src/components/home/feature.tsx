@@ -88,7 +88,7 @@ const HomeFeature: FC = () => {
                       <Box sx={{ mt: 1, mx: 'auto' }}>
                         <Link href={link ?? ''} passHref>
                           <StyledButton color="primary" size="small" variant="text">
-                            Enroll Early
+                            Learn more
                           </StyledButton>
                         </Link>
                       </Box>

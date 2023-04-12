@@ -1,1 +1,1 @@
-export { default as MentorCardItem } from './client-card-item'
+export { default as ClientCardItem } from './client-card-item'

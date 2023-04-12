@@ -6,7 +6,7 @@ import {
   HomeHero,
   HomeBuiltOn,
   HomeTestimonial,
-  HomeOurMentors,
+  HomeClients,
   HomeNewsLetter,
   HomePlayground,
 } from '@/components/home'
@@ -19,7 +19,7 @@ const Home: NextPageWithLayout = () => {
       <HomeFeature />
       <HomeTestimonial />
       <HomePlayground />
-      <HomeOurMentors />
+      <HomeClients />
       <HomeNewsLetter />
     </>
   )
